@@ -32,8 +32,8 @@ app.get('/:time', function (req, res) {
 
     res.send({ "unix": unix, "natural": natural });
 });
-
-app.listen(3000, function () {
+var port = process.env.PORT || 8080;
+app.listen(port, function () {
     return console.log('express running on port 3000');
 });
 
