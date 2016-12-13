@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start":"out/app.js",
+    "start":"node out/app.js",
     "build": "babel src -d out",
     "clean": "rm out/* -r",
     "deep-clean": "rm node_modules -r && npm install",
